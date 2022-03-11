@@ -121,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     }
 
-  get newMethod => child;
+  
     }
 
 
