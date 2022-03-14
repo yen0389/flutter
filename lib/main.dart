@@ -63,38 +63,24 @@ class _MyHomePageState extends State<MyHomePage> {
         
       ),
       
-      body: Center(
-
-
-        child: CircleAvatar(
-        backgroundColor: Colors.blue[100],
-        radius: 115,
-        child: CircleAvatar(
-          foregroundColor: Colors.blue.shade600,
-          radius: 110,
+      body: Container(
+        child: Image.asset('assets/manos.webp'),
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        margin: const EdgeInsets.all(90),
+        decoration: BoxDecoration(
+          color: Colors.blueAccent,
+          border: Border.all(color: Colors.black26, width: 4),
+          borderRadius: BorderRadius.circular(20),
           
-          child: const CircleAvatar(
-            child: Text(
-              'HOLA!:',
-              textScaleFactor: 2
-            ),
-            
-          backgroundImage: NetworkImage(
-            
-            "https://cdn2.rsvponline.mx/files/rsvp/styles/wide/public/images/main/2021/istock-1067430662_1.jpg", scale: 1),
-            radius: 80,
-            
-          )
-          )
-        )
-              ),
+        ),
+        
+      ),
       
         floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.blue,
         highlightElevation: 10,
         shape: const Border(),
-        tooltip: 'Increment',
         child: const Icon(Icons.coffee),
 
       ),
